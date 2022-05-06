@@ -74,12 +74,6 @@
                         <td>{{ mold_descriptions.balance }}</td>
                         <td>{{ mold_descriptions.release_status }}</td>
                         <td class="expiry_status" id="expiry_status">{{ mold_descriptions.expiry_date }}</td>
-
-                        <td>
-                            <a href="/mold_description/update/{{mold_descriptions.mold_description_id}}" class="btn"
-                               data-toggle="modal" data-target="#modaledit{{mold_descriptions.mold_description_id}}">
-                                <i class="fa fa-pencil"></i></a>
-                        </td>
                     </tr>
                     </tbody>
                     {% endif %}

@@ -75,11 +75,7 @@
                         <td>{{ glue_descriptions.release_status }}</td>
                         <td class="expiry_status" id="expiry_status">{{ glue_descriptions.expiry_date }}</td>
 
-                        <td>
-                            <a href="/glue_description/update/{{glue_descriptions.glue_description_id}}" class="btn"
-                               data-toggle="modal" data-target="#modaledit{{glue_descriptions.glue_description_id}}">
-                                <i class="fa fa-pencil"></i></a>
-                        </td>
+
                     </tr>
                     </tbody>
                     {% endif %}
@@ -89,20 +85,6 @@
 <div id="modaledit{{glue_descriptions.glue_description_id}}" class="modal fade" role="dialog">
    <div class="modal-dialog">
       <div class="modal-content">
-
-         <div class="modal-header">
-            <h4 class="modal-title">Update Glue Information</h4>
-         </div>
-
-         <div class="modal-footer">
-
-
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-
-         </div>
-
-
       </div>
 
 
