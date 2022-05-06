@@ -265,7 +265,5 @@ def show_mold():
 # Server configurations - REM CHANGE
 # app.run(debug=True, host="api.ap-sg-1.icp.infineon.com", port=6443)
 if __name__ == "__main__":
-    app.run(host='34.74.118.123', port=80, debug=True, threaded=True)
-
-
+        app.run(host='0.0.0.0', port=8080, debug=True, threaded=True)
 
