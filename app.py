@@ -5,9 +5,9 @@ import os
 
 app = Flask(__name__)
 app.secret_key = "Secret Key"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-#app.config['SQLALCHEMY_DATABASE_URI'] = \
-#    'mysql+pymysql://DevLogMaterialInventory_u01:.eL=vW/M::2Oqw5@devux-db.sin.infineon.com:3306/DevLogMaterialInventory'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = \
+    'mysql+pymysql://DevLogMaterialInventory_u01:.eL=vW/M::2Oqw5@devux-db.sin.infineon.com:3306/DevLogMaterialInventory'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -264,7 +264,7 @@ def show_mold():
 
 # Server configurations - REM CHANGE
 # app.run(debug=True, host="api.ap-sg-1.icp.infineon.com", port=6443)
-app.run(debug=True, host="127.0.0.1", port=5000)
+app.run(debug=True, host='0.0.0.0', port=5000)
 
 
 
