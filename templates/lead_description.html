@@ -14,8 +14,7 @@
                     <h3>{{ lead_type.lead_no }} {{lead_type.title}}</h3>
                 </a>
 
-                <button type="button" style="margin:5px;" class="btn btn-success float-right" data-toggle="modal"
-                        data-target="#mymodal"><i class="fa fa-plus"></i> Add Lead Frame</button>
+
 
                 <div class="form-group pull-right" style="margin:5px;">
                     <input type="text" class="form-control" id="mySearch" placeholder="Search">
@@ -101,17 +100,6 @@
                         <td class="expiry_status" id="expiry_status">{{ lead.expiry_date }}</td>
 
 
-                        {% if lead.trans_type=="incoming" %}
-                        <td>
-                            <a href="/lead_description/update/{{lead.lead_description_id}}" class="btn" data-toggle="modal"
-                               data-target="#modaledit{{lead.lead_description_id}}"><i class="fa fa-pencil"></i></a>
-                        </td>
-                        {% endif %}
-
-                        <td>
-                            <a href="/lead_description/delete/{{lead.lead_description_id}}" class="btn"
-                               onclick="return confirm('Are You Sure To Delete?')"><i class="fa fa-trash-o"></i></a>
-                        </td>
 
                         {% if lead.trans_type == "incoming" %}
                         <td class="withdraw" id="withdraw">
